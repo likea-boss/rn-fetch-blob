@@ -365,7 +365,7 @@ public class RNFetchBlobReq extends BroadcastReceiver implements Runnable {
                             .chunkedEncoding(isChunkedRequest)
                             .setRequestType(requestType)
                             .setBody(rawRequestBodyArray)
-                            .setMIME(MediaType.parse("multipart/form-data; boundary="+ boundary));
+                            .setMIME(MediaType.parse("multipart/form-data; charset=utf-8; boundary="+ boundary));
                     builder.method(method, requestBody);
                     break;
 
